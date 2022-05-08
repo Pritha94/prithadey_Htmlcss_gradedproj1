@@ -5,13 +5,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 
-<body>
-    <form action="">
+<body class="bg">
+    <header class="header">Pharmacy</header>
+    <nav class="menu-area mt-1">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>Our Medicines
+                <ul class="dropdown">
+                    <li><a href="">Fever</a></li>
+                    <li><a href="">Muscles Pain</a></li>
+                    <li><a href="">Cold and Cough</a></li>
+                </ul>
+            </li>
+            <li>Health Care
+                <ul class="dropdown">
+                    <li><a href="">Baby Care</a></li>
+                    <li><a href="">Skin Care</a></li>
+                    <li><a href="">Home Care</a></li>
+                    <li><a href="">Personal Care</a></li>
+                    <li><a href="">Pet Care</a></li>
+                </ul>
+            </li>
+            <li><a href="./Labtest.html"> Lab Test</a></li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+        <div class="inner" id="scrolldiv">
 
-    </form>
+            <form action="">
+
+                <h3>1. Your Contact Details</h3>
+
+                <div class="form-group">
+                    <input type="text" placeholder="First Name" class="form-control">
+                    <input type="text" placeholder="Last Name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Contact Number" class="form-control">
+                    <input type="text" placeholder="Email Address" class="form-control">
+                </div>
+                <h3>2. Address</h3>
+
+                <div class="form-group">
+                    <input type="text" placeholder="House Number" class="form-control">
+                    <input type="text" placeholder="Street" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Area" class="form-control">
+                </div>
+                <h4>District</h4>
+                <select name="" id="" class="form-control option">
+                        <option value="" disabled selected>--Please Select--</option>
+                        <option value="CBC">CBC</option>
+                        <option value="">Complete Urine</option>
+                        <option value="Lipid Profile">Lipid Profile</option>
+                        <option value="Thyroid Stimulating Hormone(TSH)">Thyroid Stimulating Hormone(TSH)</option>
+                        <option value="Glucose Test">Glucose Test</option>  
+                    </select>
+
+                <div class="form-group">
+                    <h4>Do you want a hard copy of the report also?</h4>
+                    <input type="radio" value="yes" class="form-control">
+                    <h3>Yes</h3>
+                    <input type="radio" value="no" class="form-control">
+                    <h3>No</h3>
+                </div><br>
+                <h4>Select Your Comfortable Date and Time</h4>
+                <div class="form-group">
+                    <input type="date" class="form-control">
+                    <input type="time" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button>Submit</button>
+                    <button>Reset</button>
+                </div>
+
+            </form>
+            <div class="image-holder">
+                <img src="./images/Lab-Test/lab-test.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">@copyright. Only for demonstration purposes
+    </footer>
 </body>
 
 </html>
